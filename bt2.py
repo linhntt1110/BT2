@@ -12,8 +12,7 @@ bar_graph = px.bar(
 y = al_df["Date"],
 x = al_df["Large Bags"],
 title = "Bar Graph",
-color=al_df["Large Bags"]
-),
+color=al_df["Large Bags"],
 orientation='h'
 )
 st.header("Bar Chart")
