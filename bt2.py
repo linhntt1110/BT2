@@ -17,3 +17,6 @@ orientation='h'
 )
 st.header("Bar Chart")
 st.plotly_chart(bar_graph)
+[theme]
+base="dark"
+primaryColor="#fff300"
