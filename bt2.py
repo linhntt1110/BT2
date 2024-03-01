@@ -8,12 +8,13 @@ albany_df = data[data['region']=="Albany"]
 al_df = albany_df[albany_df["year"]==2015]
 # Horizontal Bar Graph
 bar_graph = px.bar(
-al_df,
-x = "Large Bags",
-y = "Date",
-title = "Bar Graph",
-color="Large Bags",
-orientation='h'
+    al_df,
+    x="Large Bags",
+    y="Date",
+    title="Bar Graph",
+    color="Large Bags",  # Control bar color here
+    orientation="h",
+    color_continuous_scale="Viridis"  # Set the color scale
 )
 st.header("Bar Chart")
 st.plotly_chart(bar_graph)
