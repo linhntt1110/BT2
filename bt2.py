@@ -1,8 +1,6 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-import seaborn as sns
-
 
 # Data Set
 data = pd.read_csv("avocado_full.csv")
@@ -11,13 +9,12 @@ albany_df = data[data['region']=="Albany"]
 al_df = albany_df[albany_df["year"]==2015]
 #Bar
 bar_graph = px.bar(
-al_df,
-x = "Large Bags",
-y = "Date",
+y = al_df["Date"],
+x = al_df["Large Bags"],
 title = "Bar Graph",
-color=al_df["Large Bags"],
+color=al_df["Large Bags"]
+),
 orientation='h'
 )
 st.header("Bar Chart")
 st.plotly_chart(bar_graph)
-sns.heatmap(df_cor, annot=True)
