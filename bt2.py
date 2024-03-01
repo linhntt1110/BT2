@@ -14,4 +14,4 @@ title = "Bar Graph",
 color=al_df["Large Bags"]
 )
 st.header("Bar Chart")
-st.plotly_chart(bar_graph_chart)
+st.plotly_chart(bar_graph)
