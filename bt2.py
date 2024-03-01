@@ -1,6 +1,9 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+import seaborn as sns
+
+
 # Data Set
 data = pd.read_csv("avocado_full.csv")
 # Minimizing Dataset
@@ -17,4 +20,4 @@ orientation='h'
 )
 st.header("Bar Chart")
 st.plotly_chart(bar_graph)
-
+sns.heatmap(df_cor, annot=True)
