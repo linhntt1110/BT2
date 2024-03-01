@@ -15,5 +15,3 @@ title = "Bar Graph",
 color="Large Bags",
 orientation='h'
 )
-st.header("Bar Chart")
-st.plotly_chart(bar_graph)
