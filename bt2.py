@@ -12,8 +12,9 @@ al_df,
 x = "Large Bags",
 y = "Date",
 title = "Bar Graph",
-color="Large Bags",
+color=al_df["Large Bags"],
 orientation='h'
 )
 st.header("Bar Chart")
 st.plotly_chart(bar_graph)
+
